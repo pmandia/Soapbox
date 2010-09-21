@@ -1,0 +1,8 @@
+Soapbox
+Copyright (C) 2010 by the following:
+
+Justin Williams
+Lucien DuPont
+Jacob Desaulniers
+
+If you have contributed to Soapbox and are not on this list, please contact us.
