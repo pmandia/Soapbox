@@ -53,4 +53,5 @@
   #import "NSMutableDictionary+SBExtensions.h"
   #import "SBActivityIndicator.h"
   #import "SBSlidingAlertView.h"
+  #include <sys/types.h>
 #endif
