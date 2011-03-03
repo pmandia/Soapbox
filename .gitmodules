@@ -1,6 +1,3 @@
-[submodule "Externals/oauthconsumer"]
-	path = Externals/oauthconsumer
-	url = git://github.com/jdg/oauthconsumer.git
 [submodule "Externals/MGTwitterEngine"]
 	path = Externals/MGTwitterEngine
 	url = git://github.com/mattgemmell/MGTwitterEngine.git
