@@ -1,0 +1,3 @@
+[submodule "Externals/oauthconsumer"]
+	path = Externals/oauthconsumer
+	url = git://github.com/jdg/oauthconsumer.git
