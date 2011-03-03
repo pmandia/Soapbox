@@ -61,6 +61,8 @@
 		D068F54013201E6400636D25 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = D068F53813201E6400636D25 /* hmac.c */; };
 		D068F54113201E6400636D25 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = D068F53A13201E6400636D25 /* sha1.c */; };
 		D068F54913201F4500636D25 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068F54813201F4500636D25 /* Security.framework */; };
+		D06DA9EE132028980063F3D7 /* MGTwitterUserListsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D06DA9ED132028980063F3D7 /* MGTwitterUserListsParser.m */; };
+		D06DA9F0132029890063F3D7 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DA9EF132029890063F3D7 /* libicucore.dylib */; };
 		D073CE6C11BF3F0500F5AABD /* disclosure-button.png in Resources */ = {isa = PBXBuildFile; fileRef = D073CE6B11BF3F0500F5AABD /* disclosure-button.png */; };
 		D07C182C1173B735005C6451 /* SBTweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07C182A1173B735005C6451 /* SBTweetViewController.m */; };
 		D07C182D1173B735005C6451 /* SBTweetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07C182B1173B735005C6451 /* SBTweetViewController.xib */; };
@@ -281,6 +283,9 @@
 		D068F53A13201E6400636D25 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
 		D068F53B13201E6400636D25 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
 		D068F54813201F4500636D25 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D06DA9EC132028980063F3D7 /* MGTwitterUserListsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterUserListsParser.h; path = Externals/MGTwitterEngine/MGTwitterUserListsParser.h; sourceTree = "<group>"; };
+		D06DA9ED132028980063F3D7 /* MGTwitterUserListsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterUserListsParser.m; path = Externals/MGTwitterEngine/MGTwitterUserListsParser.m; sourceTree = "<group>"; };
+		D06DA9EF132029890063F3D7 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		D073CE6B11BF3F0500F5AABD /* disclosure-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "disclosure-button.png"; path = "Resources/Images/disclosure-button.png"; sourceTree = "<group>"; };
 		D07C18291173B735005C6451 /* SBTweetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBTweetViewController.h; path = Classes/SBTweetViewController.h; sourceTree = "<group>"; };
 		D07C182A1173B735005C6451 /* SBTweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBTweetViewController.m; path = Classes/SBTweetViewController.m; sourceTree = "<group>"; };
@@ -530,6 +535,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06DA9F0132029890063F3D7 /* libicucore.dylib in Frameworks */,
 				D068F54913201F4500636D25 /* Security.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -602,6 +608,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D06DA9EF132029890063F3D7 /* libicucore.dylib */,
 				D068F54813201F4500636D25 /* Security.framework */,
 				D0BAB48111925BB700F29C6F /* AudioToolbox.framework */,
 				D099ED53117E510B00F0D4E5 /* MessageUI.framework */,
@@ -793,6 +800,8 @@
 				D0C8D125115D881D00F3BB5C /* MGTwitterSocialGraphLibXMLParser.m */,
 				D0C8D126115D881D00F3BB5C /* MGTwitterSocialGraphParser.h */,
 				D0C8D127115D881D00F3BB5C /* MGTwitterSocialGraphParser.m */,
+				D06DA9EC132028980063F3D7 /* MGTwitterUserListsParser.h */,
+				D06DA9ED132028980063F3D7 /* MGTwitterUserListsParser.m */,
 				D0918F8C114B445700BD7F50 /* MGTwitterXMLParser.h */,
 				D0918F8D114B445700BD7F50 /* MGTwitterXMLParser.m */,
 				D0918F8E114B445700BD7F50 /* MGTwitterYAJLParser.h */,
@@ -1483,6 +1492,7 @@
 				D068F53F13201E6400636D25 /* Base64Transcoder.c in Sources */,
 				D068F54013201E6400636D25 /* hmac.c in Sources */,
 				D068F54113201E6400636D25 /* sha1.c in Sources */,
+				D06DA9EE132028980063F3D7 /* MGTwitterUserListsParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1578,12 +1588,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Externals/libYAJLIPhone\"",
-					"\"$(SRCROOT)/Externals/oauthconsumer\"",
 				);
-				OTHER_CFLAGS = (
-					"-DDEBUG",
-					"-D__IPHONE_OS_VERSION_MIN_REQUIRED=040100",
-				);
+				OTHER_CFLAGS = "-DDEBUG";
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -1612,12 +1618,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Externals/libYAJLIPhone\"",
-					"\"$(SRCROOT)/Externals/MGTwitterEngine/OAuthConsumer\"",
 				);
-				OTHER_CFLAGS = (
-					"-D__IPHONE_OS_VERSION_MIN_REQUIRED=040100",
-					"-DNS_BLOCK_ASSERTIONS=1",
-				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
